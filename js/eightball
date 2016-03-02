@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+
+'use strict'
+
+var c = require("skilstak-colors");
+
+var answers = [
+  "Yes!",
+  "No, Bra.",
+  "Maybe.",
+  "That is true!!!!!!!!!!!!",
+  "Ask yo mama!",
+  "FAB PEEPS SAY TRUE!",
+  "Ask that --> :(",
+  "If flip man says so.",
+  "Mabye... not, he he he.",
+  "Mr.TommyPants' council says yes"
+];
+
+var easterEggLiar = ["lie|lied|liar","Why You Always Lying???"];
+var easterEggOfDeath = ["death|died|dying|die","Ask DEATH..."];
+var easterEggLove = ["love|marry|married","Ask Cupid :) "];
+var easterEggs = [ easterEggLiar, easterEggOfDeath, easterEggLove];
+
+// console.log(c.clear + c.multi("The Magical Eightball!!!"))
+
+function print(fabThing) {
+  process.stdout.write(fabThing + "\n");
+}
+
+print(c.clear + c.multi("The Magical Eightball!!!"));
